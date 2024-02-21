@@ -1665,3 +1665,17 @@ a {
   flex-direction: row; /* Xếp các phần tử con theo chiều ngang */
   align-items: center; /* Căn giữa theo chiều dọc */
 }
+
+.about-padding-custom{
+  float: left;
+  width: 24.99999%;
+  padding: 30px 10px 10px 10px;
+  border-radius: 20px;
+}
+
+.DanhMuc-container{
+  display: flex;
+  justify-content: space-between; /* Phân chia không gian đều giữa các phần tử con */
+  flex-direction: row; /* Xếp các phần tử con theo chiều ngang */
+  align-items: center; 
+}
