@@ -1679,3 +1679,43 @@ a {
   flex-direction: row; /* Xếp các phần tử con theo chiều ngang */
   align-items: center; 
 }
+
+.text-hover:hover{
+  color: #009688;
+  cursor: pointer;
+}
+
+.margin-panel-top-bottom {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.margin-panel-top {
+  margin-top: 16px;
+}
+
+.img-size{
+  width: 367px;
+  height: auto;
+}
+
+.banner-padding-custom{
+  float: left;
+  padding: 30px 5px 10px 5px;
+}
+
+.banner-container{
+  display: flex;
+  justify-content: center;
+}
+
+.product-sale-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+.div-product-sale{
+  margin: 0px 10px 0px 10px;
+}
