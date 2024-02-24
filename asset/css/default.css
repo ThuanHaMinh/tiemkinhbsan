@@ -1719,3 +1719,36 @@ a {
 .div-product-sale{
   margin: 0px 10px 0px 10px;
 }
+
+.js-content-display {
+  display: none;
+}
+
+/* css đường gạch chân */
+.underline-hover {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #333; /* Màu chữ */
+}
+
+/* CSS cho hiệu ứng underline */
+.underline-hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #333; /* Màu của đường gạch chân */
+  transition: width 0.3s ease-out; /* Hiệu ứng chuyển động */
+}
+
+/* CSS cho hiệu ứng underline khi di chuột vào */
+.underline-hover:hover::after {
+  width: 100%; /* Chiều rộng của đường gạch chân */
+}
+
+.border-bottom-custom{
+  border-bottom: 2px solid #473b3b !important;
+}
