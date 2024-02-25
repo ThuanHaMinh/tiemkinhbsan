@@ -4,7 +4,13 @@ var currentContent = 'flashSale'; // Biến lưu trữ ID của nội dung hiệ
 function toggleContent(contentId) {
   if (contentId !== currentContent) { // Kiểm tra xem nội dung được nhấp vào có khác với nội dung hiện tại không
     document.getElementById(currentContent).style.display = 'none'; // Ẩn nội dung hiện tại
-    document.getElementById(contentId).style.display = 'flex'; // Hiển thị nội dung mới
+    if(contentId === 'flashSale')
+    {
+      document.getElementById(contentId).style.display = 'block'; // Hiển thị nội dung mới
+    }
+    else{
+      document.getElementById(contentId).style.display = 'flex'; // Hiển thị nội dung mới
+    }
     peviousContent = currentContent; // dùng để khi nhấn qua nội dung hiện tại thì nội dung trước đó được add lại css phần dấu gạch dưới có hiệu ứng
     currentContent = contentId; // Cập nhật nội dung hiện tại
 

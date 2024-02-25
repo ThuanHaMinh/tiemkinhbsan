@@ -1780,3 +1780,8 @@ a {
   color: #fff !important;
   background-color: #fc0202 !important;
 }
+
+.product-status-good{
+  color: hsl(0, 0%, 0%) !important;
+  background-color: #0eed55 !important;
+}
