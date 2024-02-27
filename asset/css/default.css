@@ -1785,3 +1785,18 @@ a {
   color: hsl(0, 0%, 0%) !important;
   background-color: #0eed55 !important;
 }
+
+.bordered-hocthuat {
+  border: 5px solid black; /* border có độ dày 2px và màu đen */
+  margin: 5px 0px 5px 0px; /* margin để tạo khoảng trống xung quanh nội dung */
+  border-radius: 40px;
+  border-color: rgb(152, 9, 9);
+}
+
+.text-underline-none{
+  text-decoration: none;
+}
+
+.hocthuat-content-margin{
+  margin-left: 30px;
+}
