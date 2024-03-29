@@ -13,19 +13,37 @@
 <!-- Navbar (sit on top) -->
 <div class="tt-top">
   <div class="tt-bar tt-white tt-padding tt-card container">
-
-    <div class="txt-button">
+    <!-- responsive menu -->
+    <div class="res-headerItem">
+      <div id="menu-toggle">
+        <a href="#home" class="txt-button tt-left"><i class="fa-solid fa-bars" style="padding-right: 10px;"></i>Menu</a>
+      </div>
+      <div class="headerRightItem">
+        <a href="#home" class="txt-button tt-left"><b style="font-size: large;"><span class="tt-black tt-opacity-min" style="padding: 5px 5px 5px 5px;"><b>Tiệm Kính BS.ÂN</b></a>
+      </div>
+          <nav id="menu">
+              <ul>
+                  <li><a href="#kinhAll">Khuyến mãi</a></li>
+                  <li><a href="#gongKinh">Gọng kính</a></li>
+                  <li><a href="#trgKinh">Tròng kính</a></li>
+                  <li><a href="#kinhAll">Kính mát</a></li>
+                  <li><a href="#lienHe">Liên hệ</a></li>
+              </ul>
+          </nav>
+    </div>
+    
+    <div class="txt-button" id="headerTopLogo">
       <a href="#home" class="txt-button tt-left"><b style="font-size: large;"><span class="tt-black tt-opacity-min" style="padding: 5px 5px 5px 5px;"><b>Tiệm Kính</b></span> <span class="tt-hide-small" style="color: black;">BS.ÂN</span></b></a>
     </div>
     <!-- Float links to the right. Hide them on small screens -->
-    <div class="txt-button">
+    <div class="txt-button" id="headerTopItemCenter">
       <a class="tt-bar-item txt-button txt-button-color" href="#kinhAll"><b>Khuyến mãi</b></a>
       <a class="tt-bar-item txt-button txt-button-color" href="#gongKinh"><b>Gọng kính</b></a>
       <a class="tt-bar-item txt-button txt-button-color" href="#trgKinh"><b>Tròng kính</b></a>
-      <a class="tt-bar-item txt-button txt-button-color" href="#kinhAll"><b>Kính mát</b></a>
+      <a class="tt-bar-item txt-button txt-button-color" href="#kinhMat"><b>Kính mát</b></a>
       <a class="tt-bar-item txt-button txt-button-color" href="#lienHe"><b>Liên hệ</b></a>
     </div>
-    <div class="txt-button">
+    <div class="txt-button" id="headerTopItemRight">
       <span class="tt-button"><i class="fa-solid fa-map-location-dot icon-padding-right"></i><a href="https://www.google.com/maps/place/Ph%C3%B2ng+kh%C3%A1m+m%E1%BA%AFt+-+Ti%E1%BB%87m+k%C3%ADnh+BS.+%C3%82n/@11.0073593,106.6321371,17z/data=!3m1!4b1!4m6!3m5!1s0x3174d1214ad4a62f:0x78588523bbce569c!8m2!3d11.007354!4d106.634712!16s%2Fg%2F11vm9g783s?entry=ttu" target="_blank" style="text-decoration: none;">Cửa hàng</a>
       </span>
       <span class="tt-button"><i class="fa-solid fa-circle-info icon-padding-right"></i>Giới thiệu</span>
@@ -46,7 +64,7 @@
 
 
 <!-- Danh mục nổi bậc -->
-  <div class="tt-container">
+  <div class="tt-container" id="noiBacDisplay">
     <h1 class="tt-center"><b>DANH MỤC NỔI BẬT</b></h1>
     <p class="tt-center tt-large"><i> Sở hữu ngay mắt kính chất lượng giá tốt chỉ với giá bắt đầu 99k</i></p>
     
@@ -84,7 +102,7 @@
 
 
   <!-- Danh mục học thuật -->
-  <div class="tt-container" style="margin-top: 40px; margin-bottom: 40px;">
+  <div class="tt-container" style="margin-top: 40px; margin-bottom: 40px;" id="hocThuatDisplay">
     <div class="tt-row-padding bordered-hocthuat" style="width: auto; height: auto;">
       
       <div class="banner-container" style="align-items: center; height: 800px;">
@@ -145,8 +163,8 @@
 
   <!-- FLASH SALES -->
   <div id="flashSale">
-    <div class="tt-row-padding js-content-display" style="display: flex;">
-        <div class="tt-col l3 m6 tt-margin-bottom box-shadow box-radious">
+    <div class="tt-row-padding js-content-display" style="display: inline-block;">
+      <div class="tt-col l3 m6 tt-margin-bottom">
           <div class="tt-display-container padding-list-item">
             <div style="display: flex; justify-content: center;">
               <img src="./asset/img/trong1.jpg" alt="House" style="width:70%; height: 200px;">
@@ -166,7 +184,7 @@
           </div>
         </div>
     
-        <div class="tt-col l3 m6 tt-margin-bottom box-shadow box-radious">
+        <div class="tt-col l3 m6 tt-margin-bottom">
           <div class="tt-display-container padding-list-item">
             <div class="tt-display-topleft sales-box tt-padding">-30%</div>
             <div style="display: flex; justify-content: center;">
@@ -186,7 +204,7 @@
           </div>
         </div>
     
-        <div class="tt-col l3 m6 tt-margin-bottom box-shadow box-radious">
+        <div class="tt-col l3 m6 tt-margin-bottom">
           <div class="tt-display-container padding-list-item">
             <div class="tt-display-topleft sales-box tt-padding">-30%</div>
             <div style="display: flex; justify-content: center;">
@@ -206,7 +224,7 @@
           </div>
         </div>
         
-        <div class="tt-col l3 m6 tt-margin-bottom box-shadow box-radious">
+        <div class="tt-col l3 m6 tt-margin-bottom">
           <div class="tt-display-container padding-list-item">
             <div class="tt-display-topleft sales-box tt-padding">-30%</div>
             <div style="display: flex; justify-content: center;">
@@ -239,167 +257,167 @@
 
   <!-- Tròng Kính -->
   <div class="tt-row-padding js-content-display" id="trongKinh">
-    <div class="tt-col l3 m6 tt-margin-bottom box-shadow box-radious">
-      <div class="tt-display-container padding-list-item">
-        <div class="tt-display-topleft sales-box tt-padding">Best Saller</div>
-        <div style="display: flex; justify-content: center;">
-          <img src="./asset/img/trong5.jpg" alt="House" style="width:70%; height: 200px;">
-        </div>
-        <div class="display-item-column">
-          <p class="text-hover">Tròng Đổi Màu Khói Vis-Care 1.56</p>
-          <div>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
+    <div class="tt-col l3 m6 tt-margin-bottom">
+          <div class="tt-display-container padding-list-item">
+            <div class="tt-display-topleft sales-box tt-padding">Best Saller</div>
+            <div style="display: flex; justify-content: center;">
+              <img src="./asset/img/trong5.jpg" alt="House" style="width:70%; height: 200px;">
+            </div>
+            <div class="display-item-column">
+              <p class="text-hover">Tròng Đổi Màu Khói Vis-Care 1.56</p>
+              <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <span class="">300.000đ</span>
+            </div>
           </div>
-          <span class="">300.000đ</span>
+        </div>
+    
+        <div class="tt-col l3 m6 tt-margin-bottom">
+          <div class="tt-display-container padding-list-item">
+            <div class="tt-display-topleft sales-box tt-padding">Best Saller</div>
+            <div style="display: flex; justify-content: center;">
+              <img src="./asset/img/trong6.jpg" alt="House" style="width:70%; height: 200px;">
+            </div>
+            <div class="display-item-column">
+              <p class="text-hover">Tròng Kính Thái Lan Duralens</p>
+              <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <span class="">300.000đ</span>
+            </div>
+          </div>
+        </div>
+    
+        <div class="tt-col l3 m6 tt-margin-bottom">
+          <div class="tt-display-container padding-list-item">
+            <div style="display: flex; justify-content: center;">
+              <img src="./asset/img/trong7.jpg" alt="House" style="width:70%; height: 200px;">
+            </div>
+            <div class="display-item-column">
+              <p class="text-hover">Tròng Kính Chemi U1 1.67 ASP</p>
+              <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <span class="">300.000đ</span>
+            </div>
+          </div>
+        </div>
+    
+        <div class="tt-col l3 m6 tt-margin-bottom">
+          <div class="tt-display-container padding-list-item">
+            <div style="display: flex; justify-content: center;">
+              <img src="./asset/img/trong8.jpg" alt="House" style="width:70%; height: 200px;">
+            </div>
+            <div class="display-item-column">
+              <p class="text-hover">Tròng Kính SunLens By Essilor</p>
+              <div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <span class="">300.000đ</span>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="tt-col l3 m6 tt-margin-bottom box-shadow box-radious">
-      <div class="tt-display-container padding-list-item">
-        <div class="tt-display-topleft sales-box tt-padding">Best Saller</div>
-        <div style="display: flex; justify-content: center;">
-          <img src="./asset/img/trong6.jpg" alt="House" style="width:70%; height: 200px;">
-        </div>
-        <div class="display-item-column">
-          <p class="text-hover">Tròng Kính Thái Lan Duralens</p>
-          <div>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-          </div>
-          <span class="">300.000đ</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="tt-col l3 m6 tt-margin-bottom box-shadow box-radious">
-      <div class="tt-display-container padding-list-item">
-        <div style="display: flex; justify-content: center;">
-          <img src="./asset/img/trong7.jpg" alt="House" style="width:70%; height: 200px;">
-        </div>
-        <div class="display-item-column">
-          <p class="text-hover">Tròng Kính Chemi U1 1.67 ASP</p>
-          <div>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-          </div>
-          <span class="">300.000đ</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="tt-col l3 m6 tt-margin-bottom box-shadow box-radious">
-      <div class="tt-display-container padding-list-item">
-        <div style="display: flex; justify-content: center;">
-          <img src="./asset/img/trong8.jpg" alt="House" style="width:70%; height: 200px;">
-        </div>
-        <div class="display-item-column">
-          <p class="text-hover">Tròng Kính SunLens By Essilor</p>
-          <div>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-          </div>
-          <span class="">300.000đ</span>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
   <!-- Kính mát -->
-  <div class="tt-row-padding js-content-display" id="kinhMat">
-    <div class="tt-col l3 m6 tt-margin-bottom box-shadow box-radious">
-      <div class="tt-display-container padding-list-item">
-        <div style="display: flex; justify-content: center;">
-          <img src="./asset/img/kinhmat1.jpg" alt="House" style="width:70%; height: 200px;">
-        </div>
-        <div class="display-item-column">
-          <p class="text-hover">Kính mát EXFASH EF29955 C08</p>
-          <div>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
+    <div class="tt-row-padding js-content-display" id="kinhMat">
+      <div class="tt-col l3 m6 tt-margin-bottom">
+        <div class="tt-display-container padding-list-item">
+          <div style="display: flex; justify-content: center;">
+            <img src="./asset/img/kinhmat1.jpg" alt="House" style="width:70%; height: 200px;">
           </div>
-          <span class="">821.000đ</span>
+          <div class="display-item-column">
+            <p class="text-hover">Kính mát EXFASH EF29955 C08</p>
+            <div>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <span class="">821.000đ</span>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="tt-col l3 m6 tt-margin-bottom box-shadow box-radious">
-      <div class="tt-display-container padding-list-item">
-        <div class="tt-display-topleft sales-box tt-padding">Best Saller</div>
-        <div style="display: flex; justify-content: center;">
-          <img src="./asset/img/kinhmat2.jpg" alt="House" style="width:70%; height: 200px;">
-        </div>
-        <div class="display-item-column">
-          <p class="text-hover">Kính mát EXFASH EF6783 C25</p>
-          <div>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
+  
+      <div class="tt-col l3 m6 tt-margin-bottom">
+        <div class="tt-display-container padding-list-item">
+          <div class="tt-display-topleft sales-box tt-padding">Best Saller</div>
+          <div style="display: flex; justify-content: center;">
+            <img src="./asset/img/kinhmat2.jpg" alt="House" style="width:70%; height: 200px;">
           </div>
-          <span class="">540.000đ</span>
+          <div class="display-item-column">
+            <p class="text-hover">Kính mát EXFASH EF6783 C25</p>
+            <div>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <span class="">540.000đ</span>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="tt-col l3 m6 tt-margin-bottom box-shadow box-radious">
-      <div class="tt-display-container padding-list-item">
-        <div style="display: flex; justify-content: center;">
-          <img src="./asset/img/kinhmat3.jpg" alt="House" style="width:70%; height: 200px;">
-        </div>
-        <div class="display-item-column">
-          <p class="text-hover">Kính mát EXFASH EF58779 C02</p>
-          <div>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
+  
+      <div class="tt-col l3 m6 tt-margin-bottom">
+        <div class="tt-display-container padding-list-item">
+          <div style="display: flex; justify-content: center;">
+            <img src="./asset/img/kinhmat3.jpg" alt="House" style="width:70%; height: 200px;">
           </div>
-          <span class="">500.000đ</span>
+          <div class="display-item-column">
+            <p class="text-hover">Kính mát EXFASH EF58779 C02</p>
+            <div>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <span class="">500.000đ</span>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="tt-col l3 m6 tt-margin-bottom box-shadow box-radious">
-      <div class="tt-display-container padding-list-item">
-        <div class="tt-display-topleft sales-box tt-padding">Best Saller</div>
-        <div style="display: flex; justify-content: center;">
-          <img src="./asset/img/kinhmat4.jpg" alt="House" style="width:70%; height: 200px;">
-        </div>
-        <div class="display-item-column">
-          <p class="text-hover">Kính mát EXFASH EF36760 C19</p>
-          <div>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
+  
+      <div class="tt-col l3 m6 tt-margin-bottom">
+        <div class="tt-display-container padding-list-item">
+          <div class="tt-display-topleft sales-box tt-padding">Best Saller</div>
+          <div style="display: flex; justify-content: center;">
+            <img src="./asset/img/kinhmat4.jpg" alt="House" style="width:70%; height: 200px;">
           </div>
-          <span class="">880.000đ</span>
+          <div class="display-item-column">
+            <p class="text-hover">Kính mát EXFASH EF36760 C19</p>
+            <div>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <span class="">880.000đ</span>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
 
   <!-- Gọng kính Section -->
@@ -1104,23 +1122,23 @@
 <!-- Footer -->
 <footer class="tt-center tt-black tt-padding-16">
 
-  <div class="tt-row-padding">
-    <div class="tt-col l3 m6 tt-margin-bottom">
-      <p>ー Tiệm kính BS Ân <i class="fa-solid fa-copyright"></i> 2024 ー</p>
-      <p style="text-align: justify; padding: 0px 30px 0px 30px;">
-        Tiệm kính Bác Sĩ Ân là điểm đến tin cậy cho những ai đang tìm kiếm mắt kính chất lượng và dịch vụ đo mắt chuyên nghiệp. Chúng tôi tự hào cung cấp các sản phẩm mắt kính đa dạng và phong phú, kèm theo dịch vụ đo mắt chính xác để đảm bảo sự thoải mái và sự hài lòng tối đa của khách hàng.
-      </p>
-    </div>
+  <div class="tt-row-padding" style="display: inline-block;">
+    <div style="display: inline-block;">
+      <div class="tt-col l3 m6 tt-margin-bottom">
+        <p>ー Tiệm kính BS Ân <i class="fa-solid fa-copyright"></i> 2024 ー</p>
+        <p style="text-align: justify; padding: 0px 30px 0px 30px;">
+          Tiệm kính Bác Sĩ Ân là điểm đến tin cậy cho những ai đang tìm kiếm mắt kính chất lượng và dịch vụ đo mắt chuyên nghiệp. Chúng tôi tự hào cung cấp các sản phẩm mắt kính đa dạng và phong phú, kèm theo dịch vụ đo mắt chính xác để đảm bảo sự thoải mái và sự hài lòng tối đa của khách hàng.
+        </p>
+      </div>
 
-    <div style="display: flex; justify-content: center;">
-      <div class="tt-col l3 m6 tt-margin-bottom" style="text-align: left; margin: 0px 30px 0px 180px;">
+      <div class="tt-col l3 m6 tt-margin-bottom" style="text-align: center;">
         <p>ー THÔNG TIN LIÊN HỆ ー</p>
         <p>Phone: <a href="tel:+123456789">+123456789</a></p>
         <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
         <p>Địa chỉ: <a href="https://www.google.com/maps/place/Ph%C3%B2ng+kh%C3%A1m+m%E1%BA%AFt+-+Ti%E1%BB%87m+k%C3%ADnh+BS.+%C3%82n/@11.0073593,106.6321371,17z/data=!3m1!4b1!4m6!3m5!1s0x3174d1214ad4a62f:0x78588523bbce569c!8m2!3d11.007354!4d106.634712!16s%2Fg%2F11vm9g783s?entry=ttu" target="_blank">211 Hồ Văn Cống, Bình Dương</a></p>
       </div>
 
-      <div class="tt-col l3 m6 tt-margin-bottom" style="text-align: left; margin: 0px 30px 0px 50px;">
+      <div class="tt-col l3 m6 tt-margin-bottom" style="text-align: center;">
         <p>ー HÔ TRỢ KHÁCH HÀNG ー</p>
         <p><a href="tel:+123456789" class="footer-text-hover-decoration">Giới thiệu</a></p>
         <p><a href="tel:+123456789" class="footer-text-hover-decoration">Chính sách giao hàng</a></p>
@@ -1129,7 +1147,7 @@
         <p><a href="tel:+123456789" class="footer-text-hover-decoration">Hướng dẫn mua hàng</a></p>
       </div>
 
-      <div class="tt-col l3 m6 tt-margin-bottom" style="text-align: left; margin: 0px 30px 0px 30px;">
+      <div class="tt-col l3 m6 tt-margin-bottom" style="text-align: center;">
         <p>ー DANH MỤC NỔI BẬT ー</p>
         <p><a href="tel:+123456789" class="footer-text-hover-decoration">Tròng kính</a></p>
         <p><a href="tel:+123456789" class="footer-text-hover-decoration">Gọng kính</a></p>

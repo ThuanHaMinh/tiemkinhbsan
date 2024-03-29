@@ -1661,7 +1661,7 @@ a {
 
 .container {
   display: flex;
-  justify-content: space-between; /* Phân chia không gian đều giữa các phần tử con */
+  justify-content: center; /* Phân chia không gian đều giữa các phần tử con */
   flex-direction: row; /* Xếp các phần tử con theo chiều ngang */
   align-items: center; /* Căn giữa theo chiều dọc */
 }
@@ -1764,8 +1764,7 @@ a {
 }
 
 .box-shadow{
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  margin: 5px 5px 5px 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .padding-list-item{
@@ -1818,4 +1817,81 @@ a {
 .footer-text-hover-decoration{
   text-decoration: none;
  cursor: pointer; 
+}
+
+#menu-toggle {
+  display: none;
+
+}
+
+
+
+
+
+/* Responsive styles */
+#menu {
+  display: none;
+}
+
+.headerRightItem{
+  display: none;
+}
+
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu ul li {
+  padding: 10px;
+}
+
+#menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+
+#headerTopLogo, #headerTopItemCenter, #headerTopItemRight, #noiBacDisplay, #hocThuatDisplay{
+  display: none;
+}  
+
+#menu-toggle {
+  display: block;
+}
+
+.container{
+  justify-content: initial;
+  display: block;
+}
+
+.res-headerItem{
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.headerRightItem{
+  display: block;
+margin-left: auto;
+}
+
+#menu {
+  display: block;
+  position: absolute;
+  top: 60px; /* Adjust as needed */
+  left: -200px;
+  background-color: #333;
+  width: 200px;
+  transition: left 0.3s ease;
+}
+
+#menu.active {
+  left: 0;
+}
+#hocThuatDisplay{
+  display: none;
+}
+
 }
