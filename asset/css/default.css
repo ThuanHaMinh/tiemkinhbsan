@@ -1764,7 +1764,8 @@ a {
 }
 
 .box-shadow{
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  margin: 0px 5px;
 }
 
 .padding-list-item{
@@ -1824,9 +1825,16 @@ a {
 
 }
 
+#flashSaleDisplay{
+  display: flex;
+}
 
-
-
+#trongKinhDisplay{
+  display: flex;
+}
+#kinhMatDisplay{
+  display: flex;
+}
 
 /* Responsive styles */
 #menu {
@@ -1894,4 +1902,13 @@ margin-left: auto;
   display: none;
 }
 
+#flashSaleDisplay{
+  display: inline-block;
+}
+#trongKinhDisplay{
+  display: inline-block;
+}
+#kinhMatDisplay{
+  display: inline-block;
+}
 }
